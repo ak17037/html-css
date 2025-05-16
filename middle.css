@@ -1,0 +1,192 @@
+/* === Middle Section === */
+.middle_section {
+    background-color: lightpink;
+    grid-column: 2;
+    margin: 1px 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.name_container {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.name_container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name_section {
+    margin-left: 5px;
+}
+
+.userprofile_section_full {
+    height: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1px;
+    position: relative;
+}
+
+.userprofile_section_small {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 3.4px solid white;
+    background-color: blue;
+    top: 212px;
+    left: 70px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.edit_profile {
+    position: absolute;
+    top: 265px;
+    right: 10px;
+    padding: 6px 24px;
+    color: rgb(75, 75, 231);
+    border: 2px solid rgb(75, 75, 231);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(100, 97, 97, 0.877);
+}
+
+.patanahi {
+    position: absolute;
+    top: 330px;
+    left: 7px;
+}
+
+.user_details {
+    display: flex;
+}
+
+.user_name span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.user_name p {
+    font-size: small;
+    margin: 0;
+}
+
+.thumbnail {
+    font-size: small;
+    margin: 3px 0;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tags a {
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.tags img {
+    height: 20px;
+    width: 20px;
+    border-radius: 70%;
+    margin: 3px 5px 0 0;
+    object-fit: cover;
+}
+
+.following_container {
+    margin-top: 7px;
+}
+
+/* === Scrolling Containers === */
+.scroll-container,
+.scroll-container_2 {
+    max-height: 28vh;
+    overflow-y: auto;
+    width: 100%;
+    border: 3px solid rgb(132, 42, 216);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.scroll-container::-webkit-scrollbar,
+.scroll-container_2::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb,
+.scroll-container_2::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.messangers,
+.messangers_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.details_container,
+.unknow_details_container {
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.details_1,
+.details_4 {
+    display: flex;
+    align-items: center;
+}
+
+.details_1 img,
+.details_4 img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details_1 a,
+.details_4 a {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.details_1 span,
+.details_4 span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.details_3,
+.details_6 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.details_3 img,
+.details_6 img {
+    width: 23px;
+    height: 23px;
+    margin-top: 3px;
+    margin-right: 60px;
+    object-fit: cover;
+    border-radius: 10%;
+}

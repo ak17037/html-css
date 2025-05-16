@@ -1,0 +1,85 @@
+/* === left section === */
+.sidebaar_container {
+    background-color: rgb(160, 207, 145);
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1px 3px;
+    z-index: 100;
+}
+
+.logo_icon {
+    height: 55px;
+    width: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.nav_container {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav_container img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.nav_container p {
+    font-size: 14px;
+}
+
+.profile_button {
+    color: rgb(40, 40, 236);
+    cursor: pointer;
+}
+
+.tweet_button button {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin: -10px 0 20px 10px;
+}
+
+.tweet_button button:hover {
+    background-color: #0d8ddb;
+}
+
+/* === ID Searcher (Used in Sidebar and Right Panel) === */
+.id_searcher {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(161, 161, 165);
+    border-radius: 28px;
+    position: relative;
+    margin: 50px 0 20px;
+}
+
+.id_searcher img {
+    border: none;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.id_searcher-input {
+    position: absolute;
+    font-size: 16px;
+    width: 120px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    outline: none;
+    left: 70px;
+    z-index: 0;
+}

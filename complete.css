@@ -1,0 +1,376 @@
+/* === general Styles === */
+body {
+    margin: 10px;
+    padding: 10px;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.twitter_container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 2fr;
+    grid-gap: 1px;
+    border: 1px solid black;
+    height: max-content;
+}
+
+/* === left section === */
+.sidebaar_container {
+    background-color: rgb(160, 207, 145);
+    border: 1px solid lightseagreen;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 1px 3px;
+    z-index: 100;
+}
+
+.logo_icon {
+    height: 55px;
+    width: 55px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.nav_container {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav_container img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.nav_container p {
+    font-size: 14px;
+}
+
+.profile_button {
+    color: rgb(40, 40, 236);
+    cursor: pointer;
+}
+
+.tweet_button button {
+    background-color: #1DA1F2;
+    color: white;
+    border: none;
+    border-radius: 9999px;
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    margin: -10px 0 20px 10px;
+}
+
+.tweet_button button:hover {
+    background-color: #0d8ddb;
+}
+
+/* === ID Searcher (Used in Sidebar and Right Panel) === */
+.id_searcher {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: rgb(161, 161, 165);
+    border-radius: 28px;
+    position: relative;
+    margin: 50px 0 20px;
+}
+
+.id_searcher img {
+    border: none;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.id_searcher-input {
+    position: absolute;
+    font-size: 16px;
+    width: 120px;
+    height: 25px;
+    border: none;
+    background: transparent;
+    outline: none;
+    left: 70px;
+    z-index: 0;
+}
+
+/* === Middle Section === */
+.middle_section {
+    background-color: lightpink;
+    grid-column: 2;
+    margin: 1px 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.name_container {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+}
+
+.name_container img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.name_section {
+    margin-left: 5px;
+}
+
+.userprofile_section_full {
+    height: 200px;
+    background-color: blue;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 1px;
+    position: relative;
+}
+
+.userprofile_section_small {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border: 3.4px solid white;
+    background-color: blue;
+    top: 212px;
+    left: 70px;
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.edit_profile {
+    position: absolute;
+    top: 265px;
+    right: 10px;
+    padding: 6px 24px;
+    color: rgb(75, 75, 231);
+    border: 2px solid rgb(75, 75, 231);
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(100, 97, 97, 0.877);
+}
+
+.patanahi {
+    position: absolute;
+    top: 330px;
+    left: 7px;
+}
+
+.user_details {
+    display: flex;
+}
+
+.user_name span {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.user_name p {
+    font-size: small;
+    margin: 0;
+}
+
+.thumbnail {
+    font-size: small;
+    margin: 3px 0;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.tags a {
+    display: flex;
+    align-items: center;
+    font-size: small;
+}
+
+.tags img {
+    height: 20px;
+    width: 20px;
+    border-radius: 70%;
+    margin: 3px 5px 0 0;
+    object-fit: cover;
+}
+
+.following_container {
+    margin-top: 7px;
+}
+
+/* === Scrolling Containers === */
+.scroll-container,
+.scroll-container_2 {
+    max-height: 28vh;
+    overflow-y: auto;
+    width: 100%;
+    border: 3px solid rgb(132, 42, 216);
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+
+.scroll-container::-webkit-scrollbar,
+.scroll-container_2::-webkit-scrollbar {
+    width: 6px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb,
+.scroll-container_2::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.messangers,
+.messangers_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.details_container,
+.unknow_details_container {
+    background-color: aqua;
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+.details_1,
+.details_4 {
+    display: flex;
+    align-items: center;
+}
+
+.details_1 img,
+.details_4 img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.details_1 a,
+.details_4 a {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.details_1 span,
+.details_4 span {
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+.details_3,
+.details_6 {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.details_3 img,
+.details_6 img {
+    width: 23px;
+    height: 23px;
+    margin-top: 3px;
+    margin-right: 60px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+/* === Right Section === */
+.right_section {
+    background-color: lightblue;
+    grid-column: 3;
+    margin: 1px 2px 1px 0;
+    border-radius: 10px;
+}
+
+.photo_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px 2px;
+    background-color: blue;
+    border-radius: 10px;
+    height: 200px;
+    margin: 5px;
+}
+
+/* === Suggestions === */
+.suggestion_shower {
+    font-size: large;
+    font-weight: bold;
+    margin: 0 0 15px 15px;
+    background-color: rgb(220, 241, 25);
+    padding: 2px 0 2px 3px;
+    border-radius: 10px;
+}
+
+/* === Responsive Design === */
+@media (max-width: 1024px) {
+    .twitter_container {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .right_section {
+        display: none;
+    }
+
+    .userprofile_section_small {
+        left: 20px;
+    }
+
+    .edit_profile {
+        right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .twitter_container {
+        display: block;
+    }
+
+    .sidebaar_container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .edit_profile,
+    .userprofile_section_small,
+    .patanahi {
+        position: static;
+        margin: 10px auto;
+    }
+
+    .tags {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .photo_container {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .scroll-container,
+    .scroll-container_2 {
+        max-height: 50vh;
+    }
+}
